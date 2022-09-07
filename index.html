@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title> Quiz  </title>
+</head>
+<body>
+    
+    
+<div class="heading">
+    <h1 class="headText" style="color: rgb(30, 72, 116); font-weight:bolder;margin-top: 20px;">BASIC Quiz</h1>
+</div>
+
+<div class="outerContainer">
+
+    <div id="map" class="map">         
+                <p style="padding: 5px;font-weight:bold;">Question Map</p>
+           <a href="#Question1"><button id="id_1" class="mapbtn"> 1 </button></a> <a href="#Question2"><button id="id_2"  class="mapbtn">  2 </button></a>  <a href="#Question3"> <button id="id_3"  class="mapbtn">  3 </button></a>  <a href="#Question4"> <button id="id_4" class="mapbtn">   4 </button></a>  <a href="#Question5"> <button id="id_5"  class="mapbtn">  5</button> </a> <a href="#Question6"> <button id="id_6"  class="mapbtn">  6 </button></a> <a href="#Question7"> <button id="id_7"  class="mapbtn">  7</button> </a>  <a href="#Question8">  <button id="id_8" class="mapbtn">  8 </button></a> <a href="#Question9"> <button id="id_9"  class="mapbtn">  9</button> </a> <a href="#Question10"><button id="id_10" class="mapbtn"> 10 </button></a>
+        <a href="#Question11"><button id="id_11" class="mapbtn"> 11</button> </a> <a href="#Question12"><button id="id_12" class="mapbtn"> 12 </button></a>  <a href="#Question13"><button id="id_13" class="mapbtn"> 13 </button></a> <a href="#Question14"> <button id="id_14" class="mapbtn"> 14 </button></a>  <a href="#Question15"><button id="id_15" class="mapbtn"> 15</button> </a> <a href="#Question16"><button id="id_16" class="mapbtn"> 16 </button></a> <a href="#Question17"><button id="id_17" class="mapbtn"> 17</button> </a>  <a href="#Question18"><button id="id_18" class="mapbtn"> 18 </button></a> <a href="#Question19"><button id="id_19" class="mapbtn"> 19</button> </a> <a href="#Question20"><button id="id_20" class="mapbtn"> 20 </button></a> 
+        <a href="#Question21"><button id="id_21" class="mapbtn"> 21</button> </a> <a href="#Question22"><button id="id_22" class="mapbtn"> 22 </button></a>  <a href="#Question23"><button id="id_23" class="mapbtn"> 23 </button></a> <a href="#Question24"> <button id="id_24" class="mapbtn"> 24 </button></a>  <a href="#Question25"><button id="id_25" class="mapbtn"> 25</button> </a> <a href="#Question26"><button id="id_26" class="mapbtn"> 26 </button></a> <a href="#Question27"><button id="id_27" class="mapbtn"> 27</button> </a>  <a href="#Question28"><button id="id_28" class="mapbtn"> 28 </button></a> <a href="#Question29"><button id="id_29" class="mapbtn"> 29</button> </a> <a href="#Question30"><button id="id_30" class="mapbtn"> 30 </button></a>    
+        
+            </div>
+
+
+        <div class="container">
+
+                <div class="submitbtndiv">
+                    <button id="submit" class="" onclick="submitbtn()">Submit</button>
+                </div>
+                
+                <div id="outpage">
+                    <div id="page">
+                    
+                    </div>
+
+                </div>
+
+                
+                <div class="resultdiv">
+
+                    <div id="ans">
+                
+
+                        <dialog id="modal" class="modal">
+                            <div class="popupout">
+                
+                                <button class="close-btn">
+                                    <h3>×</h3>
+                                </button>
+                                <div class="popupresult">
+                                    <h1 class="resulttext"> kudos </h1>
+                                    <p style="margin-bottom: 5px; font-weight: bold;">you got:</p>
+                                    <div class="popupresultChild">
+                                        <h3 id="markObtain"></h3> out of <h3 id="fullmark"></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </dialog>
+                
+                    </div>
+
+                </div>     
+        </div>
+
+</div>
+<button class="result" >Result</button>
+        
+    <script src="index.js"></script>
+</body>
+</html> 

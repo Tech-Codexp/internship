@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(225, 234, 228);
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.outerContainer{
+    display: flex;
+    width: 100%;
+}
+
+
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* max-width: 300px; */
+    margin: 0px auto;
+}
+
+.map {
+    border: none;
+    width: 20%;
+    margin-right: 70px ;
+    
+}
+
+
+.card{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    width: 770px;
+    height: 480px;
+}
+
+#page{
+    margin-top: 50px;
+    background-color: none;
+    width:800px;
+    height: 500px;
+    overflow: hidden;
+    
+}
+
+.questionCount{
+    padding: 20px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.title{
+    margin: 0px 0px 40px 20px;
+    height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.ansBtn {
+    width: 720px;
+    margin: 30px 0 0 20px;
+    gap: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.btn1{
+    width: 700px;
+    padding: 8px 20px 8px 20px;
+    background-color: #b0b0b0;
+    color: whitesmoke;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 1px rgb(208, 206, 206);
+    text-align: start;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    
+    
+}
+
+.btn1:hover {
+    padding: 8px 20px 8px 20px;
+    opacity: 0.9;
+    opacity: 0.8;
+    color: whitesmoke;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn1:active {
+    padding: 8px 20px 8px 20px;
+    background-color: rgb(34, 102, 174);
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+}
+
+/* .btn1:focus {
+    padding: 8px 20px 8px 20px;
+    background-color: rgb(184, 10, 10);
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+} */
+
+.submitbtndiv{
+    display: flex;
+    flex-direction: row;
+    gap: 570px;
+    
+
+}
+
+
+
+
+#submit{
+    padding: 4px 10px 4px 10px;
+    font-size: 25px;
+    background-color: #1c1cff;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 3px grey;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#submit:hover {
+    padding: 4px 10px 4px 10px;
+    font-size: 25px;
+    background-color: #5c5cf2;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 3px grey;
+    transition: 0.15s;
+    border-radius: 7zxpx;
+}
+#submit:active{
+    padding: 4px 10px 4px 10px;
+    font-size: 25px;
+    background-color: #040480;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 3px grey;
+    border-radius: 4px;
+}
+
+.resultdiv{
+        margin-left: 60%;
+}
+
+.result{
+    padding: 5px 10px 5px 10px ;
+    font-size: 23px;
+    background-color: #1c1cff;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 3px grey;
+    border-radius: 7px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.result:hover {
+    opacity: 0.8;
+}
+.result:active {
+    background-image: linear-gradient(to left, rgb(81, 81, 162), rgb(62, 123, 62));
+}
+
+#modal{
+    margin: 200px 450px 400px 600px;
+    border: none;
+    box-shadow: 3px 3px 4px rgb(167, 156, 137);
+}
+
+
+.popupout{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0 5px 0 0;
+}
+
+.close-btn{
+    border: none;
+    font-size: xx-large;
+
+}
+
+.popupresult{
+    margin: 0 20px 0 20px ;
+    padding: 0 20px 10px 20px;
+}
+
+.popupresultChild{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.NextPrevDiv{
+    display: flex;
+    flex-direction: row;
+    gap:540px;    
+}
+
+
+.mapbtn{
+    width: 40px;
+    height: 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(217, 214, 214);
+    cursor: pointer;
+}
+
+.mapbtn:focus {
+    border: #1c1cff;
+    color: white;
+    background-color: grey;
+}
+
+.QuestionMapBtn{
+    width: 110px;
+    height: 40px;
+    padding: 5px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px grey;
+    margin-left: 10px;
+}
+
+.questionMap{
+    width: 100px;
+    position: absolute;
+    align-self: flex-start;
+    margin-right: 500px;
+}
+
+.close-Map{
+    margin-left: 94%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: large;
+    border: none;
+    padding: 5px 7px 5px 7px;
+    cursor: pointer;
+}
+
+
+/* scroll to go to top and bottom shortcut */
+
+.scrolldown,
+.scrollup {
+    padding: 10px;
+    font-size: large;
+    margin: 50px 100px 50px 0;
+    font-weight: bold;
+    border: none;
+    box-shadow: 3px 3px 5px rgb(145, 115, 115);
+    background-color: rgb(0, 34, 255);
+    border-radius: 5px;
+    color: white;
+}
+
+.scrolldown:active,
+.scrollup:active{
+    background-color: rgb(9, 28, 154);
+}
+
