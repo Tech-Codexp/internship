@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>HTML FORM</title>
+</head>
+<body>
+        <div class="siblings">
+            <p>Already have account?</p>
+            <button class="login" onclick="login()">Log in</button>
+        </div>
+
+        <div class="form">
+
+            <h2> Sign Up Form</h2>
+            <br>
+            <input class="elements" type="text" minlength="6" name="" id="1" placeholder="Username" size="20" required>
+            <br>
+            <input class="elements" type="password" minlength="6" name="" id="2" placeholder="Password" size="20" required>
+            <br>
+            <input class="elements" type="password" name="" id="3" placeholder="Confirm Password" size="20" required>
+            <br>
+            Age: <input class="elements" type="date" name="" id="4" required>
+            <br>
+            Gender: <select class="elements" name="Gender" id="5" required>
+                <option value=""></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+            <br><br>
+            <!-- in radio btn name must be same -->
+            <p>Please select Usertype:</p>
+              <input type="radio" id="6" name="usertype" value="Student">
+              <label for="6">Student</label><br>
+              <input type="radio" id="7" name="usertype" value="Teacher">
+              <label for="7">Teacher</label><br>
+
+            <br> <button class="signup" onclick="load()">Sign Up</button>
+        </div>
+    <script src="form.js"></script>
+</body>
+</html>
+
