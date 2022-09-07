@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form1.css">
+    <title>HTML FORM</title>
+</head>
+<body style="
+background-image: url(moon.jpg);">
+        <div class="form">
+
+            <h2> Sign Up Form</h2>
+            <br>
+            <input class="elements" type="text" name="" id="1" placeholder="Username" size="20" required>
+            <br>
+            <input class="elements" type="password" name="" id="2" placeholder="Password" size="20" required>
+            <br>
+            <input class="elements" type="password" name="" id="3" placeholder="Confirm Password" size="20" required>
+            <br>
+            Age: <input class="elements" type="date" name="" id="4" required>
+            <br>
+            Gender: <select class="elements" name="Gender" id="5" required>
+                <option value=""></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+            <br><br>
+            <!-- in radio btn name must be same -->
+            <p>User Type:</p>
+              <input type="radio" id="html" name="usertype" value="HTML">
+              <label for="html">Student</label><br>
+              <input type="radio" id="css" name="usertype" value="CSS">
+              <label for="css">Teacher</label><br>
+
+            <br> <button class="signup" onclick="load()">Sign Up</button>
+        </div>
+    <script src="form.js"></script>
+</body>
+</html>
