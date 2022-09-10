@@ -18,6 +18,8 @@ int main()
 
 	printf("Choose the Operation you want to perform\n\tEnter 1 for Encryption\n\tEnter 2 for Decryption\n");
 	scanf("%d", &select);
+
+	printf("\n\t");
 	if (select == 1)
 	{
 
@@ -25,7 +27,7 @@ int main()
 		{
 			letter = text[i];
 			num = letter;
-			if (num != 32 && num > 90)
+			if (num >= 97 && num < 123)
 			{
 				num -= 32;
 				code = Encrypt(num, salt); // call function
@@ -33,15 +35,15 @@ int main()
 
 				printf("%c", code);
 			}
-			else if (num == 32)
+			else if (num >= 65 && num < 91)
 			{
-				code = num;
+
+				code = Encrypt(num, salt); // call function
 				printf("%c", code);
 			}
 			else
 			{
-
-				code = Encrypt(num, salt); // call function
+				code = num;
 				printf("%c", code);
 			}
 			//
@@ -54,7 +56,7 @@ int main()
 			letter = text[i];
 			num = letter;
 
-			if (num > 90)
+			if (num >= 97 && num < 123)
 			{
 				num -= 32;
 				code = Decrypt(num, salt); // call function
@@ -62,15 +64,15 @@ int main()
 
 				printf("%c", code);
 			}
-			else if (num == 32)
+			else if (num >= 65 && num < 91)
 			{
-				code = num;
+
+				code = Decrypt(num, salt); // call function
 				printf("%c", code);
 			}
 			else
 			{
-
-				code = Decrypt(num, salt); // call function
+				code = num;
 				printf("%c", code);
 			}
 			//
@@ -80,6 +82,8 @@ int main()
 	{
 		printf("Invalid input..:(");
 	}
+
+	printf("\n");
 }
 
 int Encrypt(value, shift)
