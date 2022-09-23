@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/brush');
+
 *{
     margin: 0;
     padding: 0;
@@ -51,6 +53,7 @@ body{
     height: 150px;
     object-fit: contain;
     transition: 1s;
+    cursor: pointer;
     
 }
 
@@ -70,8 +73,17 @@ body{
 }
 
 .pcard{
-    border-radius: 30px;
-    box-shadow: 5px 5px 9px black;
+    border-radius: 70px;
+    box-shadow: 12px 12px 30px #344d66, -12px -12px 25px #a2a6a9;
     padding: 130px;
     backdrop-filter: blur(9px);
+    cursor: grab;
+}
+
+
+h4{
+    font-family: Verdana;
+    font-size: 20px;
+    color: #ebf2ff;
+    text-shadow: 2px 2px 5px rgb(33, 59, 255);
 }

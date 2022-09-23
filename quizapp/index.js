@@ -229,7 +229,7 @@ const DATA = [
     {
         id: 22,
         question:
-            "Which is the best search tool for finding Web sites that hsve been handpicked and recommended by someone else?",
+            "Which is the best search tool for finding Web sites that have been handpicked and recommended by someone else?",
         options: [
             {
                 no: "id0_22",
@@ -735,7 +735,7 @@ const DATA = [
             {
                 no: "id2_4",
                 key: "C",
-                text: "A persowho likes to look at websites ",
+                text: "A person who likes to look at websites ",
             },
             {
                 no: "id3_4",
@@ -828,8 +828,8 @@ const DATA = [
     },
 ];
 
-const QMap =[
-    { id: 'id_1' }, { id: 'id_2' }, { id: 'id_3' }, { id: 'id_4' }, { id: 'id_5'  },
+const QMap = [
+    { id: 'id_1' }, { id: 'id_2' }, { id: 'id_3' }, { id: 'id_4' }, { id: 'id_5' },
     { id: 'id_6' }, { id: 'id_7' }, { id: 'id_8' }, { id: 'id_9' }, { id: 'id_10' },
     { id: 'id_11' }, { id: 'id_12' }, { id: 'id_13' }, { id: 'id_14' }, { id: 'id_15' },
     { id: 'id_16' }, { id: 'id_17' }, { id: 'id_18' }, { id: 'id_19' }, { id: 'id_20' },
@@ -877,12 +877,11 @@ for (let data of DATA) {
     index++;
 
     //this part is for first and last next and back button disabling
-    if(data.id ===1){
+    if (data.id === 1) {
         document.querySelector('#backid').disabled = true;
-        changecolor('backid','grey');
+        changecolor('backid', 'grey');
     }
-    else if(data.id ===30)
-    {
+    else if (data.id === 30) {
         document.querySelector('#nextid').disabled = true;
         changecolor('nextid', 'grey');
     }
@@ -891,23 +890,22 @@ for (let data of DATA) {
 
 
 
-const handleClick = (index, option,id_num) => {
-    
+const handleClick = (index, option, id_num) => {
 
-        const selectedAnswer = answers[index];
-        if(selectedAnswer.selectedKey===option)
-        {
-            selectedAnswer.selectedKey = null;
-            selectedAnswer.options.forEach(option => {
 
-                if (option.key !== selectedAnswer.selectedKey) {
-                    changecolor(option.no, "#b0b0b0"); // select key color change back
-                    changecolor('id_' + id_num, '#D9D6D6');
-                    document.getElementById('id_' + id_num).style.color = 'black';
-                }
+    const selectedAnswer = answers[index];
+    if (selectedAnswer.selectedKey === option) {
+        selectedAnswer.selectedKey = null;
+        selectedAnswer.options.forEach(option => {
 
-                });
-         }else{
+            if (option.key !== selectedAnswer.selectedKey) {
+                changecolor(option.no, "#b0b0b0"); // select key color change back
+                changecolor('id_' + id_num, '#D9D6D6');
+                document.getElementById('id_' + id_num).style.color = 'black';
+            }
+
+        });
+    } else {
 
         selectedAnswer.selectedKey = option;
         selectedAnswer.options.forEach(option => {
@@ -920,8 +918,8 @@ const handleClick = (index, option,id_num) => {
             }
             changecolor('id_' + id_num, 'blue');
             document.getElementById('id_' + id_num).style.color = 'white';
-            });
-        }
+        });
+    }
 
 };
 
