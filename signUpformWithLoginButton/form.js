@@ -31,10 +31,8 @@ function load(){
 }
 
 function login(){
-    alert('Welcome To Senseless World')
+    alert('Hi! Glad to see you back  to TEAM BOS')
 }
-
-
 
 
 

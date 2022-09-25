@@ -42,7 +42,6 @@ body {
     color: white;
     letter-spacing: 1px;
     cursor: pointer;
-
 }
 
 .login:active {
@@ -51,7 +50,7 @@ body {
     border-radius: 9px;
     border: none;
     font-size: 20px;
-    background-color: rgb(0, 0, 200);
+    opacity: 0.8;
     color: white;
     cursor: pointer;
 }
@@ -92,7 +91,7 @@ h2{
 .signup{
     border: none;
     border-radius: 7px;
-    margin: 40px 0 0 40%;
+    margin: 40px 0 20px 40%;
     padding: 7px;
     font-size: large;
     background-color: blue;

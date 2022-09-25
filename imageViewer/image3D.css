@@ -3,16 +3,36 @@
     padding: 0;
 }
 body{
-        
+        width: 100vh;
+        margin-left: 25%;
         background-repeat: no-repeat;
         background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         backdrop-filter: blur(5px);
 }
+
+/* image output designing section */
+.imageviewer {
+    margin-top: 10px;
+    height: 466.69px;
+    width: 700px;
+    border-radius: 15px;
+    background-color: rgba(39, 27, 126, 0.212);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+
+}
+
+
 .outerlayer{
     margin: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     height: 100%;
     position: relative;
@@ -22,9 +42,10 @@ body{
     background-color: whitesmoke;
 
     border-radius: 15px;
-   margin: 10px;
+   margin: 550px 0 0 0;
    padding: 25px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
     
@@ -53,22 +74,11 @@ body{
 
 
 
-/* image output designing section */
-.imageviewer{
-    margin-top: 50px;
-    height: 466.69px;
-    width: 700px;
-    border-radius: 15px;
-    background-color: rgba(39, 27, 126, 0.212);
-    display: flex;
-    align-items: center;
-    position: relative;
-    
-}
+
 
 #output{
-    height: 466.69px;
-    width: 700px;
+    height: 80%;
+    width: 100%;
     border-radius: 15px;
     box-shadow: 2px 5px 5px black;
     
@@ -115,13 +125,12 @@ body{
 /* footer path begins */
 
 .description{
-    margin: 750px 0 0 0;
-    position: absolute;
+    display: flex;
     
 }
 
 h1{
-    font-size: 70px;
+    font-size: 6vh;
     font-family: "Forte";
         color: rgb(50, 49, 49);
         text-shadow: 5px 3px 3px #167fff;
@@ -130,7 +139,7 @@ h1{
 
 h1:hover {
     transition: 1s;
-    font-size: 70px;
+    font-size: 10vh;
     font-family: "Forte";
         color: rgb(50, 49, 49);
         text-shadow: 5px 3px 3px #3b8bec;
@@ -148,3 +157,169 @@ h1:not(hover){
 }
 
 /* magneto   Script MT Bold  Blackadder ITC  Forte  Harlow Solid Italic */
+
+@media only screen and (max-width:550px) {
+
+body {
+        width: 100vh;
+        margin: 0 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+    }
+
+ 
+
+    .outerlayer {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 100%;
+        position: relative;
+    }
+
+        /* image output designing section */
+        .imageviewer {
+
+            margin-top: 50px;
+            height: 67vh;
+            width: 100vh;
+            border-radius: 15px;
+            background-color: rgba(39, 27, 126, 0.212);
+            display: flex;
+            align-items: center;
+            position: fixed;
+            z-index: 1;
+
+        }
+
+    /* whole box styling */
+    .imageoutbox {
+        background-color: whitesmoke;
+
+        border-radius: 15px;
+        margin: 700px 0 0 0;
+        padding: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 10%;
+
+    }
+
+    /* image designing section */
+
+    .image {
+        border-radius: 7px;
+        width: 20%;
+        margin: 5%;
+    }
+
+    .image:hover {
+        transition: 0.5s;
+        transform: scale(1.5);
+        width: 30%;
+        background-color: white;
+        z-index: 1;
+    }
+
+    .image:not(hover) {
+        /* this is for hover out (finally i found this to make this better ) */
+        transition: 0.7s;
+        transform: scale(1);
+        transform: skew(20deg);
+        box-shadow: -1px 5px 5px black;
+
+    }
+
+
+
+ 
+
+    #output {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 2px 5px 5px black;
+
+    }
+
+    #prev,
+    #next {
+        position: absolute;
+        height: 100%;
+        width: 20%;
+        background-color: none;
+        color: rgb(118, 49, 49);
+    }
+
+    #prev {
+        border-radius: 15px 0 0 15px;
+        border: none;
+        font-size: 50px;
+        opacity: 0.01;
+        padding: 20%;
+        padding-right: 10%;
+    }
+
+    #next {
+        border-radius: 0 15px 15px 0;
+        margin-left: 76vh;
+        font-size: 50px;
+        border: none;
+        font-size: 0px 50px 0px 300px;
+        opacity: 0.01;
+        padding: 99.7px;
+    }
+
+    #prev:hover,
+    #next:hover {
+        transition: 0.4s;
+        opacity: 0.5;
+    }
+
+    #prev:not(hover),
+    #next:not(hover) {
+        transition: 0.9s;
+        opacity: 0.01;
+    }
+
+    /* footer path begins */
+
+    
+
+    h1 {
+        font-family: "Forte";
+        color: rgb(50, 49, 49);
+        text-shadow: 5px 3px 3px #167fff;
+
+    }
+
+    h1:hover {
+        transition: 1s;
+        font-size: 70px;
+        font-family: "Forte";
+        color: rgb(50, 49, 49);
+        text-shadow: 5px 3px 3px #3b8bec;
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    h1:not(hover) {
+        transition: 1s;
+        font-family: "Forte";
+        color: rgb(50, 49, 49);
+        text-shadow: 5px 3px 3px #167fff;
+        opacity: 0.5;
+
+
+    }
+
+    /* magneto   Script MT Bold  Blackadder ITC  Forte  Harlow Solid Italic */ipt MT Bold  Blackadder ITC  Forte  Harlow Solid Italic */
+
+}
